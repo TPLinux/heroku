@@ -1,0 +1,70 @@
+<style>
+ *{
+     font-size:90%;
+ }
+ #msg{
+     width: 75%;
+     padding: 4px;
+     height: 38px;
+     border: 1px solid #625c5c;
+     border-radius: 3px;
+ }
+ #msg-btn{
+     width: 15vw;
+     padding: 10px;
+     border: 1px solid #074524;
+     background: #71a72e;
+     color: white;
+     font-weight: bold;
+     border-radius: 3px;
+ }
+ #bot-msg{
+     position:relative;
+     left:10px;
+     background-color: #418ccb;
+     padding: 10px;
+     padding-left: 10px;
+     width: 100px;
+     font-size: 12px;
+     color: white;
+     border-radius: 2px 22px 2px 22px;
+     text-align: left;
+     padding-left: 22px;
+ }
+ #human-msg{
+     position:relative;
+     left:90%;
+     background-color: #41cb6e;
+     padding: 10px;
+     padding-right: 10px;
+     width: 100px;
+     font-size: 12px;
+     color: white;
+     border-radius: 22px 2px 22px 2px;
+     text-align: right;
+     padding-right: 22px;
+ }
+ #space{
+     min-height:70px;
+ }
+ #msg-form{
+     width:100vw;
+     position:fixed;
+     bottom:0;
+ }
+</style>
+<div>
+    <div id="msg-container">
+	<div id="bot-msg">Bot</div>
+	<br/>
+	<div id="human-msg">Human <br/> hdhhvb hjbdhjb <br/>jhbdhjvb</div>
+	<br/>
+	<div id="bot-msg">Bot2</div>
+    </div>
+    <br/>
+    <form id="msg-form" method="post" dir="rtl" align="right">
+	<center>
+	    <input id="msg" name="msg" type="text" value=""/> <button id="msg-btn">ارسال</button>
+	</center>
+    </form>
+</div>

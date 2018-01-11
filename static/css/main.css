@@ -1,0 +1,121 @@
+body{
+    padding:0;
+    margin:0;
+    align:right;
+    direction:rtl;
+    background-color:#d7d7d7;
+}
+a{
+    text-decoration:none
+}
+.container{
+    color: #636363;
+    margin-top:100px;
+    padding:20px;
+    padding-right:50px;
+}
+
+.container t1{
+    font-weight:bold;
+    font-size:18px;
+    border-right:7px solid #454242;
+    padding-right:20px;
+}
+
+.container li{
+    font-size:14px;
+    margin-right:50px;
+}
+
+#navbar{
+    position:fixed;
+    top:0;
+    height:50px;
+    width:100%;
+    background-color:#545454;
+    box-shadow: 0px 2px 2px #212121;
+}
+#navbar a{
+    font-size:13px;
+    color:white;
+    text-decoration:none;
+    background-color:#454242;
+    padding:5px 20px 5px 20px;
+    border-radius:2px;
+}
+#navbar a:hover{
+    background-color: #1b1919;
+}
+
+#nav-links{
+    padding-right:10px;
+    margin-top:12px;
+}
+
+#reg-now{
+    background-color: #3ab9d4;
+    width: 20%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #378ca8;
+    color: white;
+    cursor:pointer;
+    font-weight:bold;
+}
+#reg-now:hover{
+    background-color:#3e8796;
+}
+#reg-div, #login-div{
+    display:none;
+    margin-right:-50px;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    background-color:#000000b3;
+}
+
+#reg-form-cont input, #login-form-cont input{
+    width: 60%;
+    height: 31px;
+    border: 1px solid #b0acac;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+#reg-form-cont, #login-form-cont{
+    top:15vh;
+    right:23vw;
+    width:45%;
+    position: absolute;
+    background-color:white;
+    padding:40px;
+    border-radius:7px;
+}
+footer a{
+    color:black;
+}
+footer{
+    color:#535353;
+    width:100%;
+    font-size:12px;
+    position:fixed;
+    bottom:8px;
+}
+.cancel-btn{
+    cursor:pointer;
+    background-color:#e64c4c;
+    color:white;
+    padding:4px 22px 4px 22px;
+    border-radius:2px;
+    border:1px solid #c6381a;
+}
+
+.ok-btn{
+    cursor:pointer;
+    background-color:#58b963;
+    color:white;
+    padding:4px 22px 4px 22px;
+    border-radius:2px;
+    border:1px solid #2e9345;
+}
