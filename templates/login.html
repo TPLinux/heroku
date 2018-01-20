@@ -1,0 +1,78 @@
+<style>
+ body{
+     background-color:#e3e3e3;
+     color:#7e7e7e;
+ }
+ #login-form{
+     background-color: white;
+     padding: 30px;
+     width: 67%;
+     border: 1px solid #a2a2a2;
+     border-radius: 4px;
+ }
+ #login-btn{
+     background-color: #3e69cf;
+     color: white;
+     width: 56%;
+     padding: 10px;
+     font-size: 14px;
+     font-weight: bold;
+     border: 1px solid;
+     border-radius: 6px;
+ }
+ .inputs{
+     border: 1px solid #a2a2a2;
+     padding: 8px;
+     border-radius: 2px;
+     width: 111%;
+ }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+ function login(){
+     var lData = $('#login-form').serialize();
+     console.log(lData);
+     $.ajax({
+	 url: '{{url_for("login")}}',
+	 method:'POST',
+	 data: lData,
+	 success: function(data){
+	     if(data == 'ok'){
+		 window.close();
+	     }
+	 }
+     });
+ }
+</script>
+<br/>
+<br/>
+<center>
+    <img id="app-icon" src="{{url_for('static', filename='i.png')}}" width="300" />
+    <img id="fb-icon" src="{{url_for('static', filename='fb.png')}}" width="45" />
+</center>
+<br/>
+<br/>
+<center>
+    <form id="login-form" onsubmit="return false;">
+	<table>
+	    <tr>
+		<td>Email or Phone</td>
+		<td><input class="inputs" name="email" type="text" value=""/></td>
+	    </tr>
+	    <tr>
+		<td> </td>
+		<td> </td>
+	    </tr>
+	    <tr>
+		<td>Password</td>
+		<td><input class="inputs" name="password" type="text" value=""/></td>
+	    </tr>
+	</table>
+
+	<center>
+	    <br/>
+	    <br/>
+	    <button id="login-btn" onclick="login()">Login</button>
+	</center>
+    </form>
+</center>
