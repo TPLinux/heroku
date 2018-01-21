@@ -3,33 +3,32 @@
 <html lang="en">
     <head>
 	<meta charset="utf-8">
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<title>About | AIESEC in EGYPT</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"
               content="AIESEC develops the next generation of young leaders with impactful professional and volunteering experiences to activate their leadership potential."/>
 	<meta name="keywords" content="volunteer, world, impact, creative, inspiration, youth"/>
-	<link rel="icon" href="http://aiesec.org.eg/static/AIESEC-Favicon-309x341.png" type="image/png">
+	<link rel="icon" href="{{url_for('static', filename='AIESEC-Favicon-309x341.png' )}}" type="image/png">
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="AIESEC EGYPT">
 	<meta property="og:description"
               content="AIESEC is the biggest youth run organization that aims to develop leadership potential through cross cultural exchange and practical experience.">
-	<meta property="og:url" content="http://aiesec.org.eg/">
+	<meta property="og:url" content="">
 	<meta property="og:site_name" content="AIESEC EGYPT">
 	<meta property="article:publisher" content="https://www.facebook.com/aiesecegypt">
-	<meta property="og:image" content="img/fb.jpg">
+	<meta property="og:image" content="{{url_for('static', filename='img/fb.jpg' )}}">
 
-	<link href="http://aiesec.org.eg/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="http://aiesec.org.eg/static/css/stack-interface.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="http://aiesec.org.eg/static/css/socicon.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="http://aiesec.org.eg/static/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="http://aiesec.org.eg/static/css/flickity.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="http://aiesec.org.eg/static/css/iconsmind.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="http://aiesec.org.eg/static/css/jquery.steps.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="http://aiesec.org.eg/static/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="http://aiesec.org.eg/static/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
-	<link href="http://aiesec.org.eg/static/css/font-rubiklato.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{url_for('static', filename='css/bootstrap.css' )}}" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{url_for('static', filename='css/stack-interface.css' )}}" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{url_for('static', filename='css/socicon.css' )}}" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{url_for('static', filename='css/lightbox.min.css' )}}" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{url_for('static', filename='css/flickity.css' )}}" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{url_for('static', filename='css/iconsmind.css' )}}" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{url_for('static', filename='css/jquery.steps.css' )}}" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{url_for('static', filename='css/theme.css' )}}" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{url_for('static', filename='css/custom.css' )}}" rel="stylesheet" type="text/css" media="all"/>
+	<link href="{{url_for('static', filename='css/font-rubiklato.css' )}}" rel="stylesheet" type="text/css" media="all"/>
 	<link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,400i,500,600,700%7CMerriweather:300,300i"
               rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet"/>
@@ -57,13 +56,13 @@
 		<div class="container">
 		    <div class="row">
 			<div class="col-xs-3 col-sm-2">
-			    <a href="http://aiesec.org.eg/">
-				<img class="logo logo-dark" alt="logo" src="http://aiesec.org.eg/static/img/logo-light.png"/>
-				<img class="logo logo-light" alt="logo" src="http://aiesec.org.eg/static/img/logo-dark.png"/>
+			    <a href="">
+				<img class="logo logo-dark" alt="logo" src="{{url_for('static', filename='img/logo-light.png' )}}"/>
+				<img class="logo logo-light" alt="logo" src="{{url_for('static', filename='img/logo-dark.png' )}}"/>
 			    </a>
 			</div>
 			<div class="col-xs-9 col-sm-10 text-right">
-			    <a href="http://aiesec.org.eg#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+			    <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
 				<i class="icon icon--sm stack-interface stack-menu"></i>
 			    </a>
 			</div>
@@ -78,9 +77,9 @@
 		    <div class="row">
 			<div class="col-md-1 col-sm-2 hidden-xs">
 			    <div class="bar__module">
-				<a href="http://aiesec.org.eg/">
-				    <img class="logo logo-dark" alt="logo" src="http://aiesec.org.eg/static/img/logo-dark.png"/>
-				    <img class="logo logo-light" alt="logo" src="http://aiesec.org.eg/static/img/logo-dark.png"/>
+				<a href="">
+				    <img class="logo logo-dark" alt="logo" src="{{url_for('static', filename='img/logo-dark.png' )}}"/>
+				    <img class="logo logo-light" alt="logo" src="{{url_for('static', filename='img/logo-dark.png' )}}"/>
 				</a>
 			    </div>
 			    <!--end module-->
@@ -96,17 +95,17 @@
 						    <div class="dropdown__content col-md-2 col-sm-4">
 							<ul class="menu-vertical">
 							    <li>
-								<a href="http://aiesec.org.eg/global-volunteer/">
+								<a href="global-volunteer/">
 								    Global Volunteer
 								</a>
 							    </li>
 							    <li class="">
-								<a href="http://aiesec.org.eg/global-entrepreneur/">
+								<a href="global-entrepreneur/">
 								    Global Entrepreneur
 								</a>
 							    </li>
 							    <li class="">
-								<a href="http://aiesec.org.eg/global-talent/">
+								<a href="global-talent/">
 								    Global Talent
 								</a>
 							    </li>
@@ -127,12 +126,12 @@
 						    <div class="dropdown__content col-md-2 col-sm-4">
 							<ul class="menu-vertical">
 							    <li>
-								<a href="http://aiesec.org.eg/coming-soon/">
+								<a href="coming-soon/">
 								    Companies
 								</a>
 							    </li>
 							    <li class="">
-								<a href="http://aiesec.org.eg/coming-soon/">
+								<a href="coming-soon/">
 								    NGOs
 								</a>
 							    </li>
@@ -145,10 +144,10 @@
 					</div>
 				    </li>
 				    <li class="">
-					<a class="" href="http://aiesec.org.eg/about/">About</a>
+					<a class="" href="about/">About</a>
 				    </li>
 				    <li class="">
-					<a class="" href="http://aiesec.org.eg/coming-soon/">Blog</a>
+					<a class="" href="coming-soon/">Blog</a>
 				    </li>
 				</ul>
 			    </div>
@@ -164,7 +163,7 @@
 	<div class="main-container">
 	    <section class="cover height-80 imagebg text-center parallax" data-overlay="7">
 		<div class="background-image-holder background--top">
-		    <img alt="background" src="http://aiesec.org.eg/static/img/about-img.jpg"/>
+		    <img alt="background" src="{{url_for('static', filename='img/about-img.jpg' )}}"/>
 		</div>
 		<div class="container pos-vertical-center">
 		    <div class="row">
@@ -235,21 +234,21 @@
 	    </footer>
 	</div>
 	<!--<div class="loader"></div>-->
-	<script src="http://aiesec.org.eg/static/js/jquery-3.1.1.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/flickity.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/easypiechart.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/parallax.js"></script>
-	<script src="http://aiesec.org.eg/static/js/typed.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/datepicker.js"></script>
-	<script src="http://aiesec.org.eg/static/js/isotope.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/ytplayer.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/lightbox.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/granim.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/jquery.steps.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/countdown.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/twitterfetcher.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/spectragram.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/smooth-scroll.min.js"></script>
-	<script src="http://aiesec.org.eg/static/js/scripts.js"></script>
+	<script src="{{url_for('static', filename='js/jquery-3.1.1.min.js' )}}"></script>
+	<script src="{{url_for('static', filename='js/flickity.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/easypiechart.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/parallax.js')}}"></script>
+	<script src="{{url_for('static', filename='js/typed.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/datepicker.js')}}"></script>
+	<script src="{{url_for('static', filename='js/isotope.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/ytplayer.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/lightbox.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/granim.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/jquery.steps.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/countdown.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/twitterfetcher.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/spectragram.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/smooth-scroll.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/scripts.js')}}"></script>
     </body>
 </html>

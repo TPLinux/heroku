@@ -1,0 +1,50 @@
+/*! Place your custom styles here */
+
+.feature-6 > img {
+    border-radius: 6px;
+}
+
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    transform: translate(50%, -50%);
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 350px;
+        transform: translate(0%, -50%);
+    }
+}
+
+@media (max-width: 767px){
+    .center {
+        top: 50%;
+        width: 97%;
+        transform: translate(0%, -50%);
+        opacity: 0.3;
+    }
+}
+
+.bg--teal {
+    background: #00a0a9;
+}
+
+.bg--blue {
+    background: #037ef3;
+}
+
+.type--light{
+    font-weight: 300;
+}
+
+.feature-1 {
+    min-height: 3.14285714em;
+}
